@@ -27,3 +27,5 @@ airflow standalone  # Starts the UI & Scheduler
 ![dbt](https://github.com/user-attachments/assets/cd8183bc-af7f-4970-97f4-d5ca43f9686c)
 ## Airflow
 ![Airflowpng](https://github.com/user-attachments/assets/504f7830-c5bc-4044-bbf4-00074fe8f892)
+## website 
+https://devblogit.com/
