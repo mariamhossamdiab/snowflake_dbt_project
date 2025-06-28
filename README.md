@@ -1,4 +1,6 @@
 # End-to-End Data Engineering Project: dbt, Snowflake & Apache Airflow
+![png](https://github.com/user-attachments/assets/3bba8164-3595-4ce7-a204-c3d2be238566)
+
 ## Overview
 This project is a complete data engineering pipeline using dbt (Data Build Tool), Snowflake (Data Warehouse), and Apache Airflow (Orchestration Tool). It covers data ingestion, transformation, and scheduling in a structured and scalable manner.
 
