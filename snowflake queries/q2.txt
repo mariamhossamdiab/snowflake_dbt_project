@@ -1,0 +1,20 @@
+
+SELECT Lower (CURRENT_REGION()), Lower (CURRENT_ACCOUNT());
+
+
+SELECT CURRENT_USER();
+drop user dbt_user;
+-- Create a new user for dbt
+CREATE USER dbt_user PASSWORD = 'dbt_password'
+LOGIN_NAME= 'dbt_user' 
+DEFAULT_ROLE = ACCOUNTADMIN 
+MUST_CHANGE_PASSWORD = FALSE;
+---Grant role to user
+GRANT ROLE ACCOUNTADMIN TO USER dbt_user;
+--Grant access to the database
+GRANT USAGE ON WAREHOUSE finance_wh TO ROLE ACCOUNTADMIN;
+GRANT USAGE ON DATABASE finance_db TO ROLE ACCOUNTADMIN; 
+GRANT USAGE ON SCHEMA finance_db.raw TO ROLE ACCOUNTADMIN;
+
+--Grant table access
+GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA finance_db.raw TO ROLE ACCOUNTADMIN;

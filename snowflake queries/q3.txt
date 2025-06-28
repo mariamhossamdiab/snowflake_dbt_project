@@ -1,0 +1,14 @@
+
+
+select * from CUSTOMERS
+.
+select * from ORDERS
+⚫
+select * from ORDER_ITEMS
+select * from PRODUCTS
+--------------------
+select * from STG_ORDER_ITEMS 
+select * from STG_CUSTOMERS 
+select * from STG_ORDERS 
+select * from STG_PRODUCTS
+drop view STG_ORDER_ITEMS

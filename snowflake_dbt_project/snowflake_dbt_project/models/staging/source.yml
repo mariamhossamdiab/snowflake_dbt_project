@@ -1,0 +1,14 @@
+
+version: 2
+sources:
+  - name: raw
+    database: finance_db 
+    schema: raw 
+    tables:
+          - name: customers
+          - name: orders
+          - name: order_items
+          - name: products
+# Your Snowflake database
+# Schema where raw data is stored
+
